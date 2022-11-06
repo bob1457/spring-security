@@ -16,9 +16,19 @@ public class User
     private  String username;
 
     @Column(nullable = false)
-    private  String Password;
+    private  String password;
 
     @Column(nullable = false)
-    private String Name;
+    private String email;
 
+    public User(String username, String email, String password)
+    {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User() {
+
+    }
 }
